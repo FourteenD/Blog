@@ -17,8 +17,6 @@ jobs:
           yarn docs:build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_DIR: ./docs/.vuepress/dist
         with:
-          PUBLISH_DIR: ./docs/.vuepress/dist
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: docs/.vuepress/dist
