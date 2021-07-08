@@ -11,6 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: node -v
-        run: node -v
+      - run: ls
