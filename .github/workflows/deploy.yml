@@ -1,15 +1,12 @@
 # 这是帮助您开始使用 Actions 的基本工作流程
 
-name: CI
+name: Build and Deploy
 
 # 控制工作流何时运行
 on:
 # 在推送或拉取请求事件上触发工作流，但仅针对主分支
   push:
     branches: [ main ]
-
-  # 允许您从“操作”选项卡手动运行此工作流
-  workflow_dispatch:
 
 # 工作流运行由一个或多个可以顺序或并行运行的作业组成
 jobs:
