@@ -1,4 +1,4 @@
-name: deploy
+name: vuepress
 
 on:
   push:
