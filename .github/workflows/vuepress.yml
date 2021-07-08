@@ -19,4 +19,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         env:
           DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_DIR: docs/.vuepress/dist
+          PUBLISH_DIR: ./docs/.vuepress/dist
+        with:
+          PUBLISH_DIR: ./docs/.vuepress/dist
