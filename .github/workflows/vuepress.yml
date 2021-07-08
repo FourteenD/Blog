@@ -11,8 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn
-      - run: yarn docs:build
+      - name: Build
+        run: |
+          yarn
+          yarn docs:build
       #发布到MyBlog/gh-pages 查看https://mybells.github.io/MyBlog/，需要修改base配置为MyBlog，修改图片路径
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
