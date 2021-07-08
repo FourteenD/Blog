@@ -22,11 +22,12 @@ jobs:
         uses: actions/checkout@main
 
       # 使用 runners shell 运行单个命令
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # 使用 runners shell 运行一组命令
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: vuepress-deploy
+        uses: FourteenD/Blog@main
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: FourteenD/Blog
+          TARGET_BRANCH: main
+          BUILD_SCRIPT: yarn && yarn build
+          BUILD_DIR: docs/.vuepress/dist/
+          CNAME: www.fourteen.top
