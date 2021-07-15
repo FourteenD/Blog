@@ -1,34 +1,16 @@
-const moment = require("moment");
-
 module.exports = {
-  "vuepress-plugin-auto-sidebar": {
-    sort: {
-      mode: "asc",
-      readmeFirst: true,
-      readmeFirstForce: true
-    },
-    title: {
-      mode: "uppercase",
-      map: {}
-    },
-    sidebarDepth: 2,
-    collapse: {
-      open: false,
-      collapseList: [],
-      uncollapseList: []
-    },
-    ignore: []
-  },
   "@vuepress/medium-zoom": {
-    selector: "img",
+    selector: ".theme-vdoing-content img:not(.no-zoom)",
     options: {
       background: "#333842"
     }
   },
-  '@vuepress/last-updated': {
+  '@vuepress/last-updated': // "上次更新"时间格式
+  {
     transformer: (timestamp, lang) => {
-      moment.locale(lang);
-      return moment(timestamp).format("LLLL");
-    }
-  }
+      const dayjs = require('dayjs') // https://day.js.org/
+      dayjs.locale(lang) 
+      return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
+    },
+  },
 };

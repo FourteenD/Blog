@@ -7,16 +7,14 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:nav": "vuepress nav docs -f",
     "deploy": "sh deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-auto-sidebar": "^2.3.2",
     "vuepress-theme-vdoing": "^1.8.3"
   },
   "dependencies": {
-    "moment": "^2.29.1"
+    "dayjs": "^1.10.6"
   }
 }

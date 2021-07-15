@@ -1,18 +1,27 @@
 module.exports = [
   {
-    "text": "About",
-    "link": "/category/about/"
-  },
-  {
-    "text": "Javascript",
-    "link": "/category/frontend/javascript/"
-  },
-  {
-    "text": "Pic Bed",
-    "link": "/category/picBed/"
-  },
-  {
-    "text": "Vue",
-    "link": "/category/frontend/vue/"
+    "text": "category",
+    "items": [
+      {
+        "text": "ABOUT",
+        "link": "/category/about/"
+      },
+      {
+        "text": "CATEGORY",
+        "link": "/category/"
+      },
+      {
+        "text": "JAVASCRIPT",
+        "link": "/category/frontend/javascript/"
+      },
+      {
+        "text": "PICBED",
+        "link": "/category/picBed/"
+      },
+      {
+        "text": "VUE",
+        "link": "/category/frontend/vue/"
+      }
+    ]
   }
 ];
