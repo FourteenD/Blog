@@ -7,7 +7,7 @@ module.exports = {
   smoothScroll: true, // 平滑滚动
   logo: 'https://cdn.jsdelivr.net/gh/FourteenD/PicBed/blog_logo.jpg', // 导航栏logo
   repoLabel: 'GitHub',
-  repo: 'FourteenD/Blog', // 导航栏右侧生成Github链接
+  repo: 'FourteenD', // 导航栏右侧生成Github链接
   searchMaxSuggestions: 10, // 搜索结果显示最大数
   lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
   docsDir: 'docs', // 编辑的文件夹
@@ -44,10 +44,7 @@ module.exports = {
   // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
   // pageButton: false, // 是否显示快捷翻页按钮，默认true
 
-  sidebar: {
-    mode: 'structuring',
-    collapsable: true
-  }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+  sidebar: 'structuring', // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
