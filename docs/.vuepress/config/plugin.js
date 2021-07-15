@@ -3,10 +3,10 @@ module.exports = {
     sort: {
       mode: "asc",
       readmeFirst: true,
-      readmeFirstForce: false
+      readmeFirstForce: true
     },
     title: {
-      mode: "titlecase",
+      mode: "uppercase",
       map: {}
     },
     sidebarDepth: 2,

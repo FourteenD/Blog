@@ -22,4 +22,16 @@ module.exports = [
       { text: '归档', link: '/archives/' },
     ],
   },
+  // 没有二级导航时可以直接添加
+  { text: '目录页', link: '/web/' },
+
+  // 有二级导航时
+  {
+    text: '页面',
+    link: '/ui/',   //目录页， vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      { text: 'HTML', link: '/pages/11/' },
+      { text: 'CSS', link: '/pages/22/' },
+    ]
+  },
 ];
