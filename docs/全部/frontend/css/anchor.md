@@ -13,7 +13,7 @@ tags:
 ## 选项卡
 
 ```vue
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 .anchor-demo-1.tabs {
   width: 100px;
   height: 60px;
@@ -50,7 +50,7 @@ tags:
 
 ::: details 效果
 
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 .anchor-demo-1.tabs {
   width: 100px;
   height: 60px;

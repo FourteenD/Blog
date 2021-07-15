@@ -38,7 +38,7 @@ margin: inherit
 在默认 `writing-mode` 情况下。
 
 ```vue
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 p.margin-demo-1 {
   margin: 20px 0;
 }
@@ -50,7 +50,7 @@ p.margin-demo-1 {
 
 ::: details 效果
 
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 p.margin-demo-1 {
   margin: 20px 0;
 }
@@ -64,7 +64,7 @@ p.margin-demo-1 {
 ### 2. 父元素与后代元素（第一个/最后一个）
 
 ```vue
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 section.margin-demo-2 {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -86,7 +86,7 @@ footer.margin-demo-2 {
 
 ::: details 效果
 
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 section.margin-demo-2 {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -110,7 +110,7 @@ footer.margin-demo-2 {
 ### 3. 空的块级元素
 
 ```vue
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 p.margin-demo-3 {
   margin: 0;
 }
@@ -124,7 +124,7 @@ div.margin-demo-3 {
 <p class="margin-demo-3">下 margin 20px</p>
 ```
 
-<style lang="scss" scoped>
+<style lang="stylus" scoped>
 p.margin-demo-3 {
   margin: 0;
 }
