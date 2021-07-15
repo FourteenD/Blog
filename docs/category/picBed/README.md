@@ -6,7 +6,7 @@ categories:
   - category
   - picBed
 tags:
-  - 
+  - 图床
 ---
 # 介绍
 

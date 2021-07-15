@@ -5,12 +5,11 @@ module.exports = {
       background: "#333842"
     }
   },
-  '@vuepress/last-updated': // "上次更新"时间格式
-  {
+  '@vuepress/last-updated': {
     transformer: (timestamp, lang) => {
-      const dayjs = require('dayjs') // https://day.js.org/
-      dayjs.locale(lang) 
-      return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
+      const moment = require('moment')
+      moment.locale(lang)
+      return moment(timestamp).format("LLLL")
     },
   },
 };
