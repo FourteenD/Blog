@@ -1,4 +1,22 @@
 module.exports = {
+  "vuepress-plugin-auto-sidebar": {
+    sort: {
+      mode: "asc",
+      readmeFirst: true,
+      readmeFirstForce: false
+    },
+    title: {
+      mode: "titlecase",
+      map: {}
+    },
+    sidebarDepth: 2,
+    collapse: {
+      open: true,
+      collapseList: [],
+      uncollapseList: []
+    },
+    ignore: []
+  },
   "@vuepress/medium-zoom": {
     selector: ".theme-vdoing-content img:not(.no-zoom)",
     options: {
